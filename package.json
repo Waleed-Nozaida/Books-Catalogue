@@ -1,0 +1,12 @@
+{
+  "name": "books-catalogue",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Muhammad Waleed Barki",
+  "type": "commonjs",
+  "main": "code.js",
+  "scripts": {
+    "start": "node code.js"
+  }
+}

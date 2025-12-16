@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Books Catalogue</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <div id="cat-page">
+        <header class="pg-heading">
+            <h1> Catalogue Page </h1>
+            <button class="switch-pg" onclick="return show('search-page', 'cat-page');"> Go to Search Page </button>
+        </header>
+        <section class="top-section">
+            <!-- <form id="book-form">
+                <label for="book-name">Book Name:</label>
+                <input type="text" id="book-name" name="book-name">
+                <label for="author-name">Author name:</label>
+                <input type="text" id="author-name" name="author-name">
+                <label for="image">Image URL:</label>
+                <input type="text" id="image" name="image">
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price">
+                <input type="submit" value="Submit">
+            </form> -->
+            <h3 id="top-header"> Add New Book to Catalogue </h3>
+            <form class="bookform">
+                <label for="book-name">Book Name:</label>
+                <input type="text" name="title" placeholder="Enter Name" required/>
+                <label for="author-name">Author name:</label>
+                <input type="text" name="author" placeholder="Enter Name" required/>
+                <label for="image">Image URL:</label>
+                <input type="url" name="coverImageUrl" placeholder="Enter URL" required/>
+                <label for="price">Price:</label>
+                <input type="number" name="price" min="0" placeholder="Enter Price" required/>
+                <input type="submit" value="Submit"/>
+                <input type="reset" value="Reset"/>
+            </form>
+        </section>
+        <br>
+        <section class="bottom-section">
+            <div id="catalogue-header">
+                <h3> Books Catalogue (Deletion doesnt work) </h3>
+            </div>
+            <div class="catalogue-list"></div>
+        </section>
+    </div>
+    <div id="search-page">
+        <header class="pg-heading">
+            <h1> Search Page </h1>
+            <button class="switch-pg" onclick="return show('cat-page', 'search-page');"> Go to Catalogue Page </button>
+        </header>
+        <form class="searchform">
+            <input type="text" id="search-box" name="search-txt" placeholder="Enter Search keyword(s) e.g. Book Title/Author Name. Search while empty to remove previous search results"/>
+            <input type="submit" id="search-btn" value="Search"/>
+            <input type="reset" value="Reset"/>
+        </form>
+        <section class="search-results">
+            <div class="catalogue-list"></div>
+        </section>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+
+</html>
