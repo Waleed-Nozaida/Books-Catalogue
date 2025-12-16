@@ -12,8 +12,8 @@ This application serves as a frontend client for a Books API. Upon launching the
 *   **Browse Catalogue:** Fetches and displays books in a responsive, card-based grid layout including cover image, title, author, and price.
 *   **Add Books:** A form interface to add new books to the collection with duplicate detection.
 *   **Search Functionality:** dynamic search feature allowing users to find books by keywords (Title or Author).
-*   **Delete Functionality:** *[In Progress]* Interface to remove books from the collection.
-*   **Responsive Design:** styled with CSS Flexbox for a clean user interface.
+*   **Delete Functionality:** *[Missing from Server side]* Interface to remove books from the collection.
+*   **Responsive Design:** styled with CSS Flexbox for a clean user interface. *[Needs improvement]*
 
 ## 🛠️ Tech Stack
 
