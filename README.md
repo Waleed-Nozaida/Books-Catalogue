@@ -41,7 +41,3 @@ This application serves as a frontend client for a Books API. Upon launching the
 ## 👤 Author
 
 **Muhammad Waleed Barki**
-
----
-
-*Note: This project was created for an assignment involving API integration and DOM manipulation.*
